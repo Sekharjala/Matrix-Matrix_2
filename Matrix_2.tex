@@ -181,25 +181,29 @@ Similarly,
 can be combined to form the matrix equation 
 
 \begin{align}
-\vec{N}^T \vec{O} = \vec{K} \\
-\vec{O} = \vec{K} {\vec{N}^{-T}} 
+\vec{N}^T \vec{O} &= \vec{K} \\
+\vec{O} &= \vec{K} {\vec{N}^{-T}} 
 \end{align}
 Where
+\begin{enumerate}
 \begin{align}
-\vec{N} = \myvec{(\vec{A} -\vec{B}) & (\vec{B} -\vec{C})} \label{eqref_N} \\
-\vec{K} = \frac{1}{2}\myvec{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 & \norm{\vec{B}}^2 - \norm{\vec{C}}^2} \label{eqref_c}
+\vec{N} &= \myvec{(\vec{A} -\vec{B}) & (\vec{B} -\vec{C})} \label{eqref_N} \\
+\vec{K} &= \frac{1}{2}\myvec{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 & \norm{\vec{B}}^2 - \norm{\vec{C}}^2} \label{eqref_c}
 \end{align}
 by substituting $ \vec{A} ,\vec{B} $ and $\vec{C} $ in \eqref{eqref_N} and \eqref{eqref_c} \\
 we get
 \begin{align}
-\vec{N} = \myvec{-1&4 \\ -2&1} \nonumber \\
-\vec{N}^{-T} =\myvec{1/7 &-4/7 \\2/7 &-1/7} \label{eqA} \\ 
-\vec{K} =\frac{1}{2}\myvec{(2 -13)  & (13-8)} \nonumber  \\
-\vec{K} = \myvec{-11/2 & 5/2} \label{eqB} \\
-\text{ from \eqref{eqA} and \eqref{eqB} we get }  \nonumber \\
-\vec{O}= \myvec{-1/14 & 39/14} 
+\vec{N} &= \myvec{-1&4 \\ -2&1}  \\
+\vec{N}^{-T}&=\myvec{1/7 &-4/7 \\2/7 &-1/7} \label{eqA} \\ 
+\vec{K} &=\frac{1}{2}\myvec{(2 -13)  & (13-8)} \nonumber  \\
+\vec{K} &= \myvec{-11/2 & 5/2} \label{eqB} 
+\end{enumerate}
 \end{align}
- Hence in vector form \nonumber \\ 
+from \eqref{eqA} and \eqref{eqB} we get
+\begin{align}
+\vec{O} &= \myvec{-1/14 & 39/14} 
+\end{align}
+ Hence in vector form 
 \begin{align}
 \vec{O} = \myvec{-1/14 \\  39/14}
 \end{align}
